@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Cupcake List</h1>
+
+    <ul id="cupcakes-list">
+    </ul>
+    
+    <h2>Add a new cupcake!</h2>
+    
+    <form id="new-cupcake-form">
+    
+    <div class="form-group row">
+        <label for="flavor">Flavor: </label>
+        <div class="form-group col-sm-8">
+        <input class= "form-control" name="flavor" id="flavor">
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label for="size">Size: </label>
+        <div class="form-group col-sm-8">
+        <input class="form-control" name="size" id="size">
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label for="rating">Rating: </label>
+        <div class="form-group col-sm-8">
+        <input class= "form-control" type="number" name="rating" id="rating">
+        </div>
+    </div>
+    
+    <div class="form-group row">
+        <label for="image">Image: </label>
+        <div class="form-group col-sm-8">
+        <input class= "form-control" name="image" id="image">
+    </div>
+
+    <div class="form-group row">
+        <div class="ml-auto mr-3">
+            <button ckass="btn btn-success">Submit</button>
+        </div>
+    </div>
+
+    </form>
+
+    <script src="https://unpkg.com/jquery"></script>
+    <script src="https://unpkg.com/axios/dist/axios.js"></script>
+    <script src="/static/app.js"></script>
+
+</body>
+</html>
